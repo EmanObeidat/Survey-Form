@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Server Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Server Form</h1>
+    <p id="description">Please fill out the following form with the required information</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label for="name-label" id="name-label">Full Name: <input id="name" name="name-label" type="text" required  placeholder="enter your name"/></label>
+        <label for="email" id="email-label">Email: <input id="email" name="email" type="email" required placeholder="enter your email"/></label>
+        <label for="number" id="number-label">Number:(optional) <input id="number" name="number" type="number"  placeholder="enter your number" min="10" max="15"/></label>
+        <select id=dropdown>
+          <option>select your country</option>
+          <option>Amman</option>
+          <option>Irbid</option>
+        </select>
+        <select id="dropdown">
+            <option>What is your age?</option>
+            <option>less than 18</option>
+            <option>18-30</option>
+            <option>higher than 30</option>
+
+
+        </select>
+
+      </fieldset>
+      <fieldset>
+        <label>Choose which one is your account</label>
+        <label for="STUDENT-account"><input id="STUDENT-account" type="radio" name="account-type" class="inline" value="click" /> Student Account</label>
+        <label for="Teaching-account"><input id="Teaching-account" type="radio" name="account-type" class="inline" value="click" /> Teaching-Account</label>
+
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="click" /> Business Account</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="clickOK" class="inline" value="agreeOrNo"/> I agree with the terms-and-conditions
+        <label> <input id="checkboxs" type="checkbox" class="inline" value="yesOrNo" required name="clickOK"> I am not a ropot</label>
+          <p id="comment">Any Comment or suggestion?</p>
+          <textarea id="w3review" name="w3review" rows="4" cols="50">Enter your Comments here</textarea>
+          <input type="submit" id="submit" value="Submit" />
+          
+
+        </label>
+      </fieldset>
